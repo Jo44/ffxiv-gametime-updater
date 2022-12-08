@@ -88,15 +88,10 @@ public class MyUpdater {
 			logger.info("Lancement de l'application ...");
 			startMainApp();
 
-		} catch (IOException ioex) {
+		} catch (IOException | InterruptedException ex) {
 
-			logger.error("Une erreur est survenue pendant le téléchargement des fichiers de mise à jour !");
-			logger.error(ioex.getMessage());
-
-		} catch (InterruptedException iex) {
-
-			logger.error("Une erreur est survenue pendant le lancement de l'application principale !");
-			logger.error(iex.getMessage());
+			logger.error("Une erreur est survenue pendant la mise à jour !");
+			logger.error(ex.getMessage());
 
 		} finally {
 			// Cleanup

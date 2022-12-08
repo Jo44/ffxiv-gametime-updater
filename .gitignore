@@ -4,4 +4,6 @@
 .settings/
 
 # Compile
-.target/
+target/*
+*.class
+*.jar
