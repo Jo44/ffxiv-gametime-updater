@@ -5,7 +5,7 @@ This software check & update Final Fantasy XIV - GameTime
 # Downloads (Windows x64)
 
 * Final Fantasy XIV - GameTime Updater (1.0) :  
-  
+https://raw.githubusercontent.com/Jo44/ffxiv-gametime-updater/main/distrib/FFXIV-GameTime-Updater.exe  
 * Java Development Kit (JDK) (16.0.2) :  
 https://drive.google.com/file/d/1rqq5BiupeqV8is0o-OOyUGhFv549VmP5  
 NB: Java JDK v16+ is required to run Final Fantasy XIV - GameTime Updater
