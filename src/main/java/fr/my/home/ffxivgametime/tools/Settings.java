@@ -12,7 +12,7 @@ import org.apache.logging.log4j.Logger;
 /**
  * Settings
  * 
- * @version 1.0
+ * @version 1.1
  */
 public class Settings {
 	private static Logger logger = LogManager.getLogger(Settings.class);
@@ -49,7 +49,7 @@ public class Settings {
 	 */
 	public static void writeSettings(String appVersion) {
 		// Write current settings with new app version
-		writeSettings(appVersion, getFocusApp(), getKeybindAntiAfkExec(), getKeybindAntiAfkAction(), getKeybindMacroExec(), getKeybindMacroMousePos(),
+		writeSettings(appVersion, getAppFocus(), getKeybindAntiAfkExec(), getKeybindAntiAfkAction(), getKeybindMacroExec(), getKeybindMacroMousePos(),
 				getKeybindClose(), getKeybindConfirm(), getCraftFavFile(), getSetUpFavFile(), getFoodFavFile(), getRepairFavFile(),
 				getMateriaFavFile());
 	}
@@ -58,7 +58,7 @@ public class Settings {
 	 * Write settings in file
 	 * 
 	 * @param appVersion
-	 * @param focusApp
+	 * @param appFocus
 	 * @param kbAntiAfkExec
 	 * @param kbAntiAfkAction
 	 * @param kbMacroExec
@@ -71,7 +71,7 @@ public class Settings {
 	 * @param repairFavFile
 	 * @param materiaFavFile
 	 */
-	private static void writeSettings(String appVersion, String focusApp, String kbAntiAfkExec, String kbAntiAfkAction, String kbMacroExec,
+	private static void writeSettings(String appVersion, String appFocus, String kbAntiAfkExec, String kbAntiAfkAction, String kbMacroExec,
 			String kbMacroMousePos, String kbClose, String kbConfirm, String craftFavFile, String setUpFavFile, String foodFavFile,
 			String repairFavFile, String materiaFavFile) {
 		try {
@@ -79,7 +79,7 @@ public class Settings {
 			FileWriter fileWriter = new FileWriter(SETTINGS_FILE.getAbsoluteFile());
 			fileWriter.write("### FFXIV GameTime - Fichier de configuration ###");
 			fileWriter.append("\napp.version=" + appVersion);
-			fileWriter.append("\nfocus.app=" + focusApp);
+			fileWriter.append("\napp.focus=" + appFocus);
 			fileWriter.append("\nkeybind.antiafk.exec=" + kbAntiAfkExec);
 			fileWriter.append("\nkeybind.antiafk.action=" + kbAntiAfkAction);
 			fileWriter.append("\nkeybind.macro.exec=" + kbMacroExec);
@@ -99,7 +99,7 @@ public class Settings {
 		} finally {
 			// Load values
 			properties.setProperty("app.version", appVersion);
-			properties.setProperty("focus.app", focusApp);
+			properties.setProperty("app.focus", appFocus);
 			properties.setProperty("keybind.antiafk.exec", kbAntiAfkExec);
 			properties.setProperty("keybind.antiafk.action", kbAntiAfkAction);
 			properties.setProperty("keybind.macro.exec", kbMacroExec);
@@ -128,12 +128,12 @@ public class Settings {
 	}
 
 	/**
-	 * Get focus app
+	 * Get app focus
 	 * 
 	 * @return String
 	 */
-	private static String getFocusApp() {
-		return properties.getProperty("focus.app");
+	private static String getAppFocus() {
+		return properties.getProperty("app.focus");
 	}
 
 	/**
