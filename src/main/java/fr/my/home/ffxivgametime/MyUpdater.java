@@ -20,16 +20,16 @@ import fr.my.home.ffxivgametime.tools.Settings;
 /**
  * FFXIV GameTime Updater
  * 
- * @version 1.0
+ * @version 1.1
  */
 public class MyUpdater {
 	private static Logger logger = LogManager.getLogger(MyUpdater.class);
 
 	private static final String TMP_DIR = "tmp";
 	private static final String VERSION_FILE = "ffxiv-gametime.version";
-	private static final String VERSION_LINK = "https://raw.githubusercontent.com/Jo44/ffxiv-gametime/main/distrib/ffxiv-gametime.version";
+	private static final String VERSION_URL = "https://raw.githubusercontent.com/Jo44/ffxiv-gametime/main/distrib/ffxiv-gametime.version";
 	private static final String UPDATE_FILE = "FFXIV-GameTime.exe";
-	private static final String UPDATE_LINK = "https://raw.githubusercontent.com/Jo44/ffxiv-gametime/main/distrib/FFXIV-GameTime.exe";
+	private static final String UPDATE_URL = "https://raw.githubusercontent.com/Jo44/ffxiv-gametime/main/distrib/FFXIV-GameTime.exe";
 	private static String currentVersion;
 	private static String newerVersion;
 
@@ -73,7 +73,7 @@ public class MyUpdater {
 					logger.info("-> Mise à jour vers la nouvelle version exécutée avec succès !");
 
 					// Update settings
-					Settings.writeSettings(newerVersion);
+					Settings.saveSettings(newerVersion);
 
 				} else {
 					logger.error("-> Impossible de télécharger la nouvelle version :/");
@@ -126,7 +126,7 @@ public class MyUpdater {
 
 		boolean updateRequired = false;
 		// Download version file
-		File versionFile = downloadFile(VERSION_LINK, VERSION_FILE);
+		File versionFile = downloadFile(VERSION_URL, VERSION_FILE);
 		// Get update version
 		newerVersion = getNewerVersion(versionFile);
 		// Compare to current version
@@ -145,7 +145,7 @@ public class MyUpdater {
 
 		boolean updateDownloaded = false;
 		// Download update exe
-		File updateFile = downloadFile(UPDATE_LINK, UPDATE_FILE);
+		File updateFile = downloadFile(UPDATE_URL, UPDATE_FILE);
 		// Check file
 		if (updateFile != null && updateFile.exists() && updateFile.canRead()) {
 			updateDownloaded = true;

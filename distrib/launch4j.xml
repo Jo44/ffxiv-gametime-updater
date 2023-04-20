@@ -2,7 +2,7 @@
 <launch4jConfig>
   <dontWrapJar>false</dontWrapJar>
   <headerType>gui</headerType>
-  <jar>D:\Documents\Dev\Java\workspaces\workspace-perso\ffxiv-gametime-updater\target\ffxiv-gametime-updater-1.0-jar-with-dependencies.jar</jar>
+  <jar>D:\Documents\Dev\Java\workspaces\workspace-perso\ffxiv-gametime-updater\target\ffxiv-gametime-updater-1.1-jar-with-dependencies.jar</jar>
   <outfile>D:\Documents\Dev\Java\workspaces\workspace-perso\ffxiv-gametime-updater\distrib\FFXIV-GameTime-Updater.exe</outfile>
   <errTitle></errTitle>
   <cmdLine></cmdLine>
