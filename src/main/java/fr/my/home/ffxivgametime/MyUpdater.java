@@ -20,7 +20,7 @@ import fr.my.home.ffxivgametime.tools.Settings;
 /**
  * FFXIV GameTime Updater
  * 
- * @version 1.1
+ * @version 1.2
  */
 public class MyUpdater {
 	private static Logger logger = LogManager.getLogger(MyUpdater.class);

@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>fr.my.home</groupId>
 	<artifactId>ffxiv-gametime-updater</artifactId>
-	<version>1.1</version>
+	<version>1.2</version>
 	<packaging>jar</packaging>
 	<name>ffxiv-gametime-updater</name>
 	<!-- Properties -->

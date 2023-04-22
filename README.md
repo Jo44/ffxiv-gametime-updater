@@ -6,7 +6,7 @@ This software check & update Final Fantasy XIV - GameTime
 
 # Downloads (Windows x64)
 
-* Final Fantasy XIV - GameTime Updater (1.1) :  
+* Final Fantasy XIV - GameTime Updater (1.2) :  
 https://raw.githubusercontent.com/Jo44/ffxiv-gametime-updater/main/distrib/FFXIV-GameTime-Updater.exe  
 * Java Development Kit (JDK) (16.0.2) :  
 https://drive.google.com/file/d/17rp_mWY9NdcUZeBZoDZaDgS0hSCF_Nu5  
@@ -20,6 +20,8 @@ THIS TOOL WAS MADE FOR EDUCATIONAL AND DEV SKILL DEVELOPMENT PURPOSES ONLY, AND 
 
 # Changelog
 
+* Update 1.2 - 23/04/2023 :  
+  * Fix focus setting
 * Update 1.1 - 20/04/2023 :
   * Add gearbox settings
 * Update 1.0 - 08/12/2022 :
