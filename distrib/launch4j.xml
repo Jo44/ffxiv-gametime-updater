@@ -2,7 +2,7 @@
 <launch4jConfig>
   <dontWrapJar>false</dontWrapJar>
   <headerType>gui</headerType>
-  <jar>D:\Documents\Dev\Java\workspaces\workspace-perso\ffxiv-gametime-updater\target\ffxiv-gametime-updater-1.2-jar-with-dependencies.jar</jar>
+  <jar>D:\Documents\Dev\Java\workspaces\workspace-perso\ffxiv-gametime-updater\target\ffxiv-gametime-updater-1.3-jar-with-dependencies.jar</jar>
   <outfile>D:\Documents\Dev\Java\workspaces\workspace-perso\ffxiv-gametime-updater\distrib\FFXIV-GameTime-Updater.exe</outfile>
   <errTitle></errTitle>
   <cmdLine></cmdLine>
@@ -14,13 +14,15 @@
   <restartOnCrash>false</restartOnCrash>
   <manifest></manifest>
   <icon>D:\Documents\Dev\Java\workspaces\workspace-perso\ffxiv-gametime-updater\distrib\icon.ico</icon>
+  <singleInstance>
+    <mutexName>FFXIV GameTime Updater</mutexName>
+    <windowTitle>FFXIV GameTime Updater</windowTitle>
+  </singleInstance>
   <jre>
-    <path></path>
-    <bundledJre64Bit>false</bundledJre64Bit>
-    <bundledJreAsFallback>false</bundledJreAsFallback>
-    <minVersion>16</minVersion>
+    <path>lib</path>
+    <requiresJdk>false</requiresJdk>
+    <requires64Bit>false</requires64Bit>
+    <minVersion>21</minVersion>
     <maxVersion></maxVersion>
-    <jdkPreference>preferJre</jdkPreference>
-    <runtimeBits>64/32</runtimeBits>
   </jre>
 </launch4jConfig>

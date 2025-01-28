@@ -13,7 +13,7 @@ import org.apache.logging.log4j.Logger;
 /**
  * Settings
  * 
- * @version 1.2
+ * @version 1.3
  */
 public class Settings {
 	private static Logger logger = LogManager.getLogger(Settings.class);
