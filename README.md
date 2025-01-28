@@ -4,13 +4,10 @@ This software check & update Final Fantasy XIV - GameTime
 
 /!\ Executable files must be run as administrator /!\  
 
-# Downloads (Windows x64)
+# Link (Web)
 
-* Final Fantasy XIV - GameTime Updater (1.2) :  
-https://raw.githubusercontent.com/Jo44/ffxiv-gametime-updater/main/distrib/FFXIV-GameTime-Updater.exe  
-* Java Development Kit (JDK) (16.0.2) :  
-https://drive.google.com/file/d/17rp_mWY9NdcUZeBZoDZaDgS0hSCF_Nu5  
-NB: Java JDK v16+ is required to run Final Fantasy XIV - GameTime Updater
+* GitHub FFXIV GameTime :  
+https://github.com/Jo44/ffxiv-gametime  
 
 # /!\ Warning /!\\
 
@@ -20,7 +17,9 @@ THIS TOOL WAS MADE FOR EDUCATIONAL AND DEV SKILL DEVELOPMENT PURPOSES ONLY, AND 
 
 # Changelog
 
-* Update 1.2 - 23/04/2023 :  
+* Update 1.3 - 28/01/2025 :  
+  * Migration Java 16 -> Java 21
+* Update 1.2 - 23/04/2023 :
   * Fix focus setting
 * Update 1.1 - 20/04/2023 :
   * Add gearbox settings
