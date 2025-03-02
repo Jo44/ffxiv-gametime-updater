@@ -4,7 +4,7 @@ This software check & update Final Fantasy XIV - GameTime
 
 # Web
 
-* Projet GitHub - FFXIV GameTime :  
+* GitHub Project - FFXIV GameTime :  
 https://github.com/Jo44/ffxiv-gametime  
 
 # /!\ Warning /!\\
