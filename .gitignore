@@ -1,10 +1,7 @@
-# Eclipse
+.git
+.settings
+distrib/*.ico
+distrib/*.xml
+target
 .classpath
 .project
-.settings/
-
-# Compile
-target/*
-*.class
-*.jar
-/target/

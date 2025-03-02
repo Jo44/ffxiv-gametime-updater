@@ -2,11 +2,9 @@
 
 This software check & update Final Fantasy XIV - GameTime
 
-/!\ Executable files must be run as administrator /!\  
+# Web
 
-# Link (Web)
-
-* GitHub FFXIV GameTime :  
+* Projet GitHub - FFXIV GameTime :  
 https://github.com/Jo44/ffxiv-gametime  
 
 # /!\ Warning /!\\
