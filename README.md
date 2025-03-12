@@ -1,6 +1,6 @@
 # Final Fantasy XIV - GameTime Updater
 
-This software check & update Final Fantasy XIV - GameTime
+This software check and update Final Fantasy XIV - GameTime
 
 # Web
 
